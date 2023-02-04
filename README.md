@@ -14,7 +14,7 @@ This article is not released much details, you can try difference iter's pretrai
         <td ><center><img src="https://github.com/zhangquanwei962/ITstyler-Image-optimized-Text-based-Style-Transfer/blob/main/output/in39_stylized_beautiful%20and%20vibrant%2C%20like%20the%20fall%20colors.jpg"  > beautiful and vibrant, like the fall colors </center> </td>
     </tr>
 </table>
-![m1](./content/brad_pitt.jpg)![m2](./content/in39.png)
+
 ### decoder
 used in AdaIN's pretrained decoder, here is a link of [decoder](https://drive.google.com/file/d/1JY39JT6SLdHrq9rZep07To6BjV47m_4i/view?usp=share_link).
 
