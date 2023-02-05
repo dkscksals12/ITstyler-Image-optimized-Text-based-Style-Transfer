@@ -55,11 +55,11 @@ def content_transform():
 
 parser = argparse.ArgumentParser()
 # Basic options
-parser.add_argument('--content', type=str, default='./content/in39.png',
+parser.add_argument('--content', type=str, default='./content/taj_mahal.jpeg',
                     help='File path to the content image')
 parser.add_argument('--content_dir', type=str,
                     help='Directory path to a batch of content images')
-parser.add_argument('--style', type=str, default='beautiful and vibrant, like the fall colors',
+parser.add_argument('--style', type=str, default='the colors are bright and bold and the lines are dynamic',
                     help='File path to the style image, or multiple style \
                     images separated by commas if you want to do style \
                     interpolation or spatial control')
@@ -171,6 +171,7 @@ for content_path in content_paths:
         output = network(content, args.style, Istrain=False)
         # output = denormalzation(output)       
     output = output.cpu()
+    output = torch.cat((content.cpu(), output), 0)
             
     output_name = '{:s}/{:s}_stylized_{:s}{:s}'.format(
         output_path, splitext(basename(content_path))[0],
