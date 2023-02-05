@@ -1,5 +1,5 @@
 # ITstyler: Image-optimized Text-based Style Transfer
-
+## Unofficial [Paper](https://arxiv.org/abs/2301.10916)
 This article is not released much details, you can try difference iter's pretrained model or adjust the LR or MLP and more... （May be 80000iters is enough, emmm....)
 <table>
     <tr>
